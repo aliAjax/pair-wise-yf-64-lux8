@@ -16,4 +16,29 @@ button.secondary { background:#e1eeee; color:#18565a; }
 button.danger { background:#c2413b; }
 input, select, textarea { width:100%; border:1px solid #bdd3d2; border-radius:9px; padding:8px 10px; background:white; }
 .low-latency .decorative { display:none; }
-@media(max-width:900px){ .grid{grid-template-columns:1fr}.queue-row{grid-template-columns:36px 1fr}.queue-row>*:nth-child(n+3){display:none}.hero{align-items:flex-start;flex-direction:column} }
+.sync-panel { margin-bottom:18px; border-color:#b9ddd8; }
+.sync-panel h2 { font-size:18px; }
+.sync-panel h3 { font-size:14px; margin:12px 0 6px; }
+.op-grid { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:10px; }
+.op-row { padding:8px 10px; border:1px solid #dcebe9; border-radius:10px; margin-bottom:8px; background:#fbfdfd; }
+.op-row.peer { background:#f7fafd; border-color:#d3e2ee; }
+.op-row small { color:#638087; }
+.op-row code { display:block; margin-top:3px; font-size:11px; color:#5c807d; word-break:break-all; }
+.peer-sim { margin-top:10px; padding:10px; background:#eef4fb; border-radius:10px; font-size:13px; }
+.pill-ok { background:#ddf5e6; color:#14613a; }
+.pill-bad { background:#fde2e0; color:#a2352f; }
+.muted { color:#7a9196; font-size:12px; }
+.conflict-box { margin-top:14px; padding:12px; background:#fff7f5; border:1px solid #f0cdc8; border-radius:12px; }
+.conflict-row { padding:12px; background:#fff; border:1px solid #f0d9d5; border-radius:12px; margin-top:10px; display:flex; flex-direction:column; gap:10px; }
+.diff-cols { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+.side { padding:10px; border-radius:10px; }
+.side p { margin:6px 0 0; font-size:14px; line-height:1.7; white-space:pre-wrap; }
+.local-side { background:#eef8f5; border:1px solid #c4e4dc; }
+.peer-side { background:#f0f5fb; border:1px solid #cbdff2; }
+.diff-ins { background:#bfe8cf; border-radius:3px; padding:0 2px; }
+.diff-del { background:#f6c8c4; text-decoration:line-through; border-radius:3px; padding:0 2px; }
+.caption-card { background:#f1f8f7; border:1px solid #d6e9e6; }
+.caption-card.fork { background:#fff6f2; border:1px dashed #dfa99f; }
+.caption-card.winner { outline:2px solid #2f9e6b; }
+button:disabled { opacity:.5; cursor:not-allowed; }
+@media(max-width:900px){ .grid{grid-template-columns:1fr}.queue-row{grid-template-columns:36px 1fr}.queue-row>*:nth-child(n+3){display:none}.hero{align-items:flex-start;flex-direction:column}.op-grid,.diff-cols{grid-template-columns:1fr} }
